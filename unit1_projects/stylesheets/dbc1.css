@@ -4,7 +4,7 @@ body {
 	padding-right: 75px;
 }
 
-h1 {
+h1 h2 h3 h4 h5 h6 {
 	color:black; font-size: 24px;
 	}
 
@@ -21,24 +21,6 @@ ol {
 	font-weight: bold;
 }
 
-h2 {
-	color:black; font-size: 24px;
-	}
-
-h3 {
-	color:black; font-size: 24px;
-	}
-
-h4 {
-	color:black; font-size: 24px;
-	}
-h5 {
-	color:black; font-size: 24px;
-	}
-
-h6 {
-	color:black; font-size: 24px;
-	}
 .stats{
 	color:red;
 }
