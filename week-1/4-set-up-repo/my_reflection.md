@@ -44,4 +44,4 @@ What concepts were solidified in the challenge? Did you have any "aha" moments? 
 Since I haven't used github often, my understanding about how to create and clone repos have been solidified by explaining it.  Reading the articles about licensing helped me realize how important that little document really is!
 
 Did you find any resources on your own that helped you better understand a topic? If so, please list it.
-Honestly, I didn't find the need to find other resources.
+Honestly, I didn't find the need to look for other resources.
