@@ -4,14 +4,13 @@ html,body {
 }
 
 #header {
-	position: fixed;
-	width: 99.1%;
+	position:relative;
+	width: 100%;
 	margin-top: 20px;
 	height: 90px;
 	background-color: #7ECBE5;
 	border-left: -5px;
 	text-align: center;
-	border: solid black;
 	border-radius: 5px;
 	margin-top:-8px;
 	font-size: 35px;
@@ -46,7 +45,6 @@ a:visited {
     width: 88%;
     float: left;
     padding-top: 5px;
-    margin-top: 80px;
     font-size: 20px;
 }
 
@@ -57,14 +55,13 @@ a:visited {
     width: 12%;
     float: right;
     padding-top: 5px;
-    margin-top: 100px;
+    margin-top: 2%
 }
 #footer {
     position:fixed;
     bottom:0;
     left:0;
     border-radius: 5px;
-    border: solid black;
     background-color: #7ECBE5;
     width: 99.7%;
     clear:both;
