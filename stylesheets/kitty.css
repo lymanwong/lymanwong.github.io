@@ -36,21 +36,27 @@ a {
   width: 15%;
 }
 
-#content {
+#content{
   float: left;
   width: 68%;
+  margin: auto;
 }
 #footer {
   clear: both;
   background: #A2A2A2;
-}
+ }
 
 img {
   max-width: 100%;
   height: auto;
 }
 
-@media only screen and (max-width: 550px) {
+.reflection {
+  width: 68%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1000px) {
   #side_a, #content {
     width: 95%;
     float: none;
@@ -73,5 +79,4 @@ img {
     float:left;
     padding-left: 20%
   }
-
 }
