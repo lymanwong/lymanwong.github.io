@@ -1,0 +1,45 @@
+body {
+	background-color: #FFFFF6;
+	font-family: 'Comfortaa', serif;
+}
+
+p.milk {
+	font-size: 12px;
+}
+
+#wrapper {
+	max-width: 800px;
+  	margin: 45px auto 0 auto;
+  	border: 1px solid #999999;
+  	padding: 60px;
+  	background: #fff;
+  	text-align: center;
+}
+
+img{
+	max-height: 2%;
+	max-width: auto;
+}
+
+img.me {
+	max-height: 1%;
+	max-width: auto;
+}
+
+a:link{
+	text-decoration:none ;
+};
+
+a:visited{
+	text-decoration: none;
+};
+
+a:hover{
+	text-decoration:#4099FF;
+};
+
+#footer {
+	font-size: 12px;
+	position: relative;
+	clear:both;
+}

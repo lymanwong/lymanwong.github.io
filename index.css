@@ -1,10 +1,17 @@
-body {
+html, body {
 	background-color: #FFFFF6;
 	font-family: 'Comfortaa', serif;
+	height: 100%;
 }
 
 p.milk {
 	font-size: 12px;
+}
+
+#container{
+	min-height: 100%;
+	margin-bottom: -330px;
+	position: relative;
 }
 
 #wrapper {
@@ -15,7 +22,14 @@ p.milk {
   	background: #fff;
   	text-align: center;
 }
-
+.space {
+	max-width: 800px;
+  	margin: 45px auto 0 auto;
+  	border: 1px solid #999999;
+  	padding: 60px;
+  	background: #fff;
+  	text-align: right;
+}
 img{
 	max-height: 2%;
 	max-width: auto;
@@ -26,14 +40,25 @@ img.me {
 	max-width: auto;
 }
 
-a:link{
-	text-decoration:none ;
+a:link {
+	text-decoration: none ;
 };
 
-a:visited{
+a:visited {
 	text-decoration: none;
 };
 
 a:hover{
-	text-decoration:#4099FF;
+	color:#4099FF;
 };
+
+#foots {
+	height: 330px;
+	position:relative;
+
+};
+
+.clearfoots {
+	height: 330px;
+	clear:both;
+}
