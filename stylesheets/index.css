@@ -25,9 +25,9 @@ p.milk {
 .space {
 	max-width: 800px;
   	margin: 45px auto 0 auto;
-  	border: 1px solid #999999;
+  	border: 1px solid #FFFFF6;
   	padding: 60px;
-  	background: #fff;
+  	background: #FFFFF6;
   	text-align: right;
 }
 img{
