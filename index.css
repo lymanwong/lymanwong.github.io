@@ -23,7 +23,7 @@ img{
 
 img.me {
 	max-height: 1%;
-	max-height: auto;
+	max-width: auto;
 }
 
 a:link{
