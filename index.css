@@ -22,7 +22,7 @@ img{
 }
 
 img.me {
-	max-height: 5%;
+	max-height: 2%;
 	max-height: auto;
 }
 
@@ -35,5 +35,5 @@ a:visited{
 };
 
 a:hover{
-	color:#4099FF;
+	text-decoration:#4099FF;
 };
