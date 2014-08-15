@@ -41,15 +41,15 @@ img.me {
 }
 
 a:link {
-	text-decoration: none ;
+	text-decoration: none !important;
 };
 
 a:visited {
-	text-decoration: none;
+	text-decoration: none !important;
 };
 
 a:hover{
-	color:#4099FF;
+	color:#4099FF !important;
 };
 
 #foots {
