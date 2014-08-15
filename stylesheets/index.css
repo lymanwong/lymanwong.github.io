@@ -64,11 +64,3 @@ a:hover{
 	height: 330px;
 	clear:both;
 }
-
-.easteregg {
-	display:none;
-}
-
-a:hover + .easteregg {
-	display:block;
-}
