@@ -2,17 +2,17 @@ html, body {
 	background-color: #FFFFF6;
 	font-family: 'Comfortaa', serif;
 	height: 100%;
-}
+};
 
 p.milk {
 	font-size: 12px;
-}
+};
 
 #container{
 	min-height: 100%;
 	margin-bottom: -330px;
 	position: relative;
-}
+};
 
 #wrapper {
 	max-width: 800px;
@@ -21,7 +21,7 @@ p.milk {
   	padding: 60px;
   	background: #fff;
   	text-align: center;
-}
+};
 .wrapper {
 	max-width: 800px;
   	margin: 35px auto 0 auto;
@@ -29,7 +29,7 @@ p.milk {
   	padding: 60px;
   	background: #fff;
   	text-align: center;
-}
+};
 
 .space {
 	max-width: 800px;
@@ -38,23 +38,34 @@ p.milk {
   	padding: 60px;
   	background: #FFFFF6;
   	text-align: right;
-}
-img{
+};
+img {
 	max-height: 2%;
 	max-width: auto;
-}
+};
 
 #foots {
 	height: 330px;
 	position:relative;
-
 };
 
 .clearfoots {
 	height: 330px;
 	clear:both;
-}
+};
 
 span {
 	color:black;
-}
+};
+
+a:link {
+    text-decoration: none;
+};
+
+a:visited {
+    text-decoration: none;
+};
+
+a:hover {
+    color: #4099FF;
+};
