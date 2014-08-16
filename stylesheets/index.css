@@ -47,7 +47,7 @@ img {
 }
 
 img.me {
-	max-height: 2%;
+	max-height: 6%;
 	max-width: auto;
 }
 
@@ -73,6 +73,6 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover {
-    color: red;
+p.hov:hover {
+    color: #4099FF;
 }
