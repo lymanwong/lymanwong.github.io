@@ -72,7 +72,3 @@ a:link {
 a:visited {
     text-decoration: none;
 }
-
-p.hov:hover {
-    color: #4099FF;
-}
