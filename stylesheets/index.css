@@ -16,12 +16,21 @@ p.milk {
 
 #wrapper {
 	max-width: 800px;
-  	margin: 45px auto 0 auto;
+  	margin: 35px auto 0 auto;
   	border: 1px solid #999999;
   	padding: 60px;
   	background: #fff;
   	text-align: center;
 }
+.wrapper {
+	max-width: 800px;
+  	margin: 35px auto 0 auto;
+  	border: 1px solid #999999;
+  	padding: 60px;
+  	background: #fff;
+  	text-align: center;
+}
+
 .space {
 	max-width: 800px;
   	margin: 45px auto 0 auto;
