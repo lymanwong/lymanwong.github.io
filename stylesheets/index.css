@@ -44,11 +44,6 @@ img{
 	max-width: auto;
 }
 
-img.me {
-	max-height: 1.5%;
-	max-width: auto;
-}
-
 #foots {
 	height: 330px;
 	position:relative;
