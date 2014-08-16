@@ -45,21 +45,9 @@ img{
 }
 
 img.me {
-	max-height: 1%;
+	max-height: 1.5%;
 	max-width: auto;
 }
-
-a:link {
-	text-decoration: none;
-};
-
-a:visited {
-	text-decoration: none;
-};
-
-a:hover{
-	color:#4099FF;
-};
 
 #foots {
 	height: 330px;
