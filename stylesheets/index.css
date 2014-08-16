@@ -29,6 +29,7 @@ p.milk {
   	padding: 60px;
   	background: #fff;
   	text-align: center;
+	color: black;
 }
 
 .space {
@@ -51,12 +52,10 @@ img.me {
 
 a:link {
 	text-decoration: none;
-	color: none;
 };
 
 a:visited {
 	text-decoration: none;
-	color: none;
 };
 
 a:hover{
