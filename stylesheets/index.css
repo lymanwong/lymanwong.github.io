@@ -29,7 +29,6 @@ p.milk {
   	padding: 60px;
   	background: #fff;
   	text-align: center;
-	color: black;
 }
 
 .space {
@@ -71,4 +70,8 @@ a:hover{
 .clearfoots {
 	height: 330px;
 	clear:both;
+}
+
+span {
+	color:black;
 }
