@@ -46,6 +46,11 @@ img {
 	max-width: auto;
 }
 
+img.me {
+	max-height: 2%;
+	max-width: auto;
+}
+
 #foots {
 	height: 330px;
 	position:relative;
@@ -58,4 +63,16 @@ img {
 
 span {
 	color:black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
 }
