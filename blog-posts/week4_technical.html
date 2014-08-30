@@ -9,14 +9,14 @@
 		</div>
 		<div class="left">
 			<h3 id="textareatitle">Ruby Jibber Jabber - 08.29.2014</h3>
-				<p id="textarea"><b>What's an Enumerable Module?</b></br>
+				<p id="textarea"><b>What's an <a href="http://ruby-doc.org/core-2.1.2/Enumerable.html" target="_blank">Enumerable</a> Module?</b></br>
 					An Enumerable Module is just a collection of functions that "does stuff" to a collection of values like arrays or hashes (calm down, I'm still talking about Ruby and not botany).  Depending on which function you are going to use on your collection, you will have different results. For example, there are functions that would allow you to search, sort, change your collections, and more.  It's also a streamlined  way to write loops (like you can write a 100 line poem describing how the blue sky touches the deepest parts of your soul or you can say "the blue sky looks awesome today". Both will convey the same message, but latter is less wordy. <a href="https://www.youtube.com/watch?v=bFEoMO0pc7k" target="_blank">Ain't nobody got time for that!</a>). Phew, that's a bunch of tech talk. BREAK TIME!</p>
 				
 				<p id="textarea"><iframe width="425" height="250" src="http://www.youtube.com/embed/Z2guxhefWrQ" frameborder="0" allowfullscreen></iframe></p>
 
 				<p id="textarea"><b>What's #map? Doesn't it use Google Maps?!</b></br>
-					your_Collection.map is no way related to Google Maps.  This function actually makes a copy of whatever your collection is and does something to it.  For example:</br></br>
-					You have a collection of names called transformers</br></br>
+					your_Collection.map is no way related to Google Maps.  This function actually makes a copy of your collection so you can do something to the copy.  For example:</br></br>
+					You have a collection of names called transformersS1E1:</br></br>
 
 					transformersS1E1 = ["Wheeljack", "Bumblebee", "Skywarp", "Starscream", "Thunder_Cracker", "Soundwave", "Laserbeak", "Trailbreaker", "Optimus_Prime", "Bluestreak"]</br></br>
 
@@ -24,18 +24,53 @@
 					transordered = transformersS1E1.map{|name| name}</br>
 					puts transformersS1E1.sort!</br></br>
 
-					You'll get the names sorted or you can do something else to that list knowing that the original list is intact. But you're probably asking, why do that when you can just sort the original list with .sort? Well then, I wouldn't be giving you an example of how map works!</br></br>
+					You'll get the names sorted or you can do something else to that list knowing that the original list is intact. But you're probably asking, why do that when you can just sort the original list with .sort? Well then, I wouldn't be giving you an example of how .map works!  I mean, I could have though of a better example, but meh, the blue sky is awesome I guess.</br></br>
 
 					Btw, did you see Ice-T rockin' those ski goggles?! Awesome. </p>
 
 				<p id="textarea"><b>Wud about #group_by?</b></br>
-					text</p>
+					Basically, group_by breaks up your collection into groups based on whatever you like and then returns a hash where each key represents a group. Each key's value is an array that has the members of that group. For example, let's say you guys are playing a drinking game the loser has to drink a pitcher of beer.  The game is to give the names of the Star Trek TNG bridge members that are divisible by 2 (first and last name since it' can't be THAT easy...lol):</br></br>
+
+					star_trek_tng_crew = ["Jean-Luc_Picard", "William_Riker", "Deanna_Troi", "Beverly_Crusher", "Data", "Worf", "Katherine_Pulaski", "Wesley_Crusher"]</br></br>
+					
+					You'll use the following code:</br>
+					star_trek_tng_crew.group_by {|name| name.length % 2}</br></br>
+
+					You'll get:</br>
+					{1=>["Jean-Luc_Picard", "William_Riker", "Deanna_Troi", "Beverly_Crusher", "Katherine_Pulaski"], 0=>["Data", "Worf", "Wesley_Crusher"]}</br></br>
+
+					The one in front of the first array (list) it will tell you the remainder from dividing the length of the name by 2.  The part that concerns you, since you're probably totally wrecked if you taking on this challenge, is the list with 0 in front of it.  All you have to say is Data, Worf, and Wesley Crusher, drop your red Solo cup like it's hot, and then...</p>
 				
+				<p id="textarea"><iframe width="425" height="250" src="http://www.youtube.com/embed/BVrWDPi12zE" target="_blank"></iframe></p>
+
 				<p id="textarea"><b>Is #cycle like recycling?</b></br>
-					text</p>
+					Uh kinda...#cycle will go through each item each item in your collection and then all over again until it reaches a break (where you're telling the code to stop) statement in your code...like <a href="http://www.youtube.com/embed/WfmTq2B31tE" target="_blank">this</a> video.  For example, let's say that you want to go through the Giants batting lineup:</br></br>
+					
+					giants_lineup = ["Pagan", "Panik", "Posey","Sandoval", "Pence", "Morse", "Blanco","Crawford", "Vogelsong"]</br></br>
+					
+					After using the following code, each player will be printed out:</br></br>
+					giants_lineup.cycle do |player|</br>
+						puts player</br>
+						break if player == "Vogelsong"</br>
+					end</br></br>
+
+					If you don't use break, the code would print each player until you get bored and want to do somthing else.</p>
 
 				<p id="textarea"></b>Arrays + Hashes == A Rash?</b></br>
-					text</p>
+					If you got a rash on your mind, then you proooobably have something else more important to do than to read this blog.  Anyways, an array is an ordered collection of any object.  Remember the Giants batting lineup?  Well, each name in that collection (array) has a particular spot or key, not unlike their batting lineup.  We can access any object in the array using this unique key.  Pagan is the leadoff hitter and his spot in the collection is giants_lineup[0].  Panik is giants_lineup[1], Posey is giants_lineup[2] and so on.  I know it's weird since the counting starts with zero instead of 1, but that's how it is.</br></br>
+
+					A hash is similar to an array where you can collect objects in it, but the main differences are that it is a collection of key-value (you can read it as key to value) pair.  It is used to associate things you want to store to keys.  This means that you have a key, say "Posey", and have a value.  We can give "Posey" the value of "Catcher" and "First_Base".  We can also have another value-pair of key "Joaquin_Arias" with values "Third_Base","Shortstop","Second_Base".  It will look like this:</br></br>
+					
+					player_position= {</br>
+					"Posey" => ["Catcher", "First_Base"]</br>
+					"Joaquin_Arias" => ["Third_Base","Shortstop","Second_Base"]</br>
+				}</br></br>
+					
+					If you wanted to see what position Posey plays, you would write player_position["Posey"]</br></br>
+
+					You'll get:  "Catcher", "First_base"</br></br>
+
+					So basically, hashes store data like arrays, but hashes points an object to another object.  You can think of it as assigning a certain "meaning" to a string.  Each time you refer to that string, it refers to it's "meaning".</p>
 
 				<p id="textarea"><b>My YouTube song of the day</b></p>
 				<p id="textarea"><iframe width="425" height="250" src="http://www.youtube.com/embed/TWcUSa-f5dE" frameborder="0" allowfullscreen></iframe></p>
@@ -45,9 +80,9 @@
 				<h4><a href="http://lymanwong.github.io/index.html">HOME</a></h4>
 				<h6></h6>
 				<h3>Recent Posts</h3>
-					<p><a href="*">Title 1</a></p>
-					<p><a href="*">Title 2</a></p>
-					<p><a href="*">Title 3</a></p>
+					<p><a href="http://lymanwong.github.io/blog-posts/week3_cultural.html">My thinking and learning style</a></p>
+					<p><a href="http://lymanwong.github.io/blog-posts/week3_technical.html">JavaScript Awesomeness</a></p>
+					<p><a href="http://lymanwong.github.io/blog-posts/week2_technical.html">Flexing my tech knowledge</a></p>
 				<h6></h6>
 				<h3>Archives</h3>
 					<p><a href="*">This is the first month!</a></p>
