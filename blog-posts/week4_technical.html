@@ -9,16 +9,32 @@
 		</div>
 		<div class="left">
 			<h3 id="textareatitle">Ruby Jibber Jabber - 08.29.2014</h3>
-				<p id="textarea">What's this #map Enumerable Method?</br>
+				<p id="textarea"><b>What's an Enumerable Module?</b></br>
+					An Enumerable Module is just a collection of functions that "does stuff" to a collection of values like arrays or hashes (calm down, I'm still talking about Ruby and not botany).  Depending on which function you are going to use on your collection, you will have different results. For example, there are functions that would allow you to search, sort, change your collections, and more.  It's also a streamlined  way to write loops (like you can write a 100 line poem describing how the blue sky touches the deepest parts of your soul or you can say "the blue sky looks awesome today". Both will convey the same message, but latter is less wordy. <a href="https://www.youtube.com/watch?v=bFEoMO0pc7k" target="_blank">Ain't nobody got time for that!</a>). Phew, that's a bunch of tech talk. BREAK TIME!</p>
+				
+				<p id="textarea"><iframe width="425" height="250" src="http://www.youtube.com/embed/Z2guxhefWrQ" frameborder="0" allowfullscreen></iframe></p>
+
+				<p id="textarea"><b>What's #map? Doesn't it use Google Maps?!</b></br>
+					your_Collection.map is no way related to Google Maps.  This function actually makes a copy of whatever your collection is and does something to it.  For example:</br></br>
+					You have a collection of names called transformers</br></br>
+
+					transformersS1E1 = ["Wheeljack", "Bumblebee", "Skywarp", "Starscream", "Thunder_Cracker", "Soundwave", "Laserbeak", "Trailbreaker", "Optimus_Prime", "Bluestreak"]</br></br>
+
+					Let's say that you want to sort these names in alphabetical order, but you wanted to keep the list the same because the names are listed in the order they appeared in the <a href="http://www.youtube.com/embed/BNcWEkmMKBA" target="_blank">first episode</a>.  All you have to do is just make a copy of your list and then you can sort it alphabetically!</br></br>
+					transordered = transformersS1E1.map{|name| name}</br>
+					puts transformersS1E1.sort!</br></br>
+
+					You'll get the names sorted or you can do something else to that list knowing that the original list is intact. But you're probably asking, why do that when you can just sort the original list with .sort? Well then, I wouldn't be giving you an example of how map works!</br></br>
+
+					Btw, did you see Ice-T rockin' those ski goggles?! Awesome. </p>
+
+				<p id="textarea"><b>Wud about #group_by?</b></br>
 					text</p>
 				
-				<p id="textarea">Wud about #group_by?</br>
-					text</p>
-				
-				<p id="textarea">Is #cycle like recycling?</br>
+				<p id="textarea"><b>Is #cycle like recycling?</b></br>
 					text</p>
 
-				<p id="textarea">Arrays + Hashes == A Rash?</br>
+				<p id="textarea"></b>Arrays + Hashes == A Rash?</b></br>
 					text</p>
 
 				<p id="textarea"><b>My YouTube song of the day</b></p>
