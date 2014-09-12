@@ -15,49 +15,55 @@
 				</p>
 				
 				<p id="textarea"><b>What is a module?</b></br>
-					A module is collection of methods and constants.  The methods in a module may be instance methods or module methods.  Instance methods appear as methods in a class when the module is included, module </p>
+					A module is collection of methods and constants.  Modules are a way of grouping together some functions and variables and classes, somewhat like classes, but more like namespaces.  A namespace is a bully-free zone where your methods and constants can play together without having other methods and constants messing with them.</p>
 				
 				<p id="textarea"><b>How are Classes and Modules different?</b></br>
-					Here is a handy dandy table that displays the differences:</br></br>
-					<img src="http://lymanwong.github.io/images/png/medvclass.png"></br></br>
-
-					We will go line-by-line and I'll explain the differences:</br></br>
 					A class can be instantiated whereas a module cannot be instantiated.</br>
-					When you create a class, you will make a new class by calling a new method.  Like in my  Stormtrooper example from last weeks post:</br></br>
+					When you create an object instance from a class, this is the process called instantiation.  Like in my Stormtrooper example from last weeks post:</br></br>
 
 					Stormtrooper.new</br></br>
 
-					You'll get a new copy of class Stormtrooper.
+					You'll get a new copy of class Stormtrooper.  You can't instantiate a module, and therefore it does not have <i>self</i>(that sounded kinda sad, huh?! lol).</br></br>
 
+					The superclass of a class is a module whereas the superclass of a module is an object.</br></br>I know what you're thinking...foul!  What the heck is a superclass?!  
+
+					<img src="http://apiwat.co/wp-content/uploads/2013/07/jackie-chan.jpg"/></br></br>
+
+
+					Every class in Ruby has a superclass (except for BasicObject, which doesn't have a superclass):</br></br>
 					
+					<img src="http://sermoa.files.wordpress.com/2011/06/classes-and-superclasses.png"/></br></br>
+							   
+					For the context of this blog, I don't want to go further.  Just know that class's parent is module, but module is an instance of class.</br></br>
 
-					Basically, Classes are about objects while modules are about functions.
-					Instance methods appear as methods in a class when the module is included, module methods does not.  
+					Class consists of methods, constants, and variables whereas modules consists of methods, constants and classes.</br>
+					The difference is that methods contain classes, which in turn, can contain variables.</br></br>
 
-					Module methods may be called without creating an encapsulating object, while instance methods may not.  So that means that modules provide methods that you can use across multiple classes, like a library or libraries. 
+					Classes contain class methods and instance methods whereas modules contain module methods and instance methods.</br>
+					Instance methods appear as methods in a class when the module is included, module methods do not. On the other hand, module methods may be called without creating an object, like Stormtrooper.fight, while instance methods may not.</br></br>
 
-					A module can be included by multiple clases, whereas a class cannot be included in a module.</br></br>
+					Including a module into a class changes the method look up chain. So actually the class doesn't inherit any instance methods.  Extending a class with a module is same as extending any object. The class simply acquires the module's methods as instance methods.</br></br>
 
-					
+					You cannot include a class into another class.  Whereas modules can be included in classes and modules by using the include command.  You will include all instance methods as instance methods in the class/module.</br></br>
 
+					You cannot extend a class with the extend method; only with inheritance.  In a module, you can extend instance by using the extend command.  It extends a given instance with singleton methods from the module.</br></br>
 				</p>
 
-				<p id="textarea"><b>My YouTube song of the day</b></p>
-				<p id="textarea"><iframe width="400" height="250" src="http//www.youtube.com/embed/WoIgiwEVCUQ" frameborder="0" allowfullscreen></iframe></p>
+				<p id="textarea"><b>My YouTube video of the day</b></p>
+				<p id="textarea"><iframe width="400" height="250" src="http://www.youtube.com/embed/yAzMJWdoAn0" frameborder="0" allowfullscreen></iframe></p>
 		</div>
 		<div class="right">
 			<a href="http://www.linkedin.com/in/lymanwong/" target="_blank"><img src="https://s3.amazonaws.com/photos.angel.co/users/526875-medium_jpg?1405665563"></a>
 				<h4><a href="http://lymanwong.github.io/index.html">HOME</a></h4>
 				<h6></h6>
 				<h3>Recent Posts</h3>
-					<p><a href="*">Title 1</a></p>
-					<p><a href="*">Title 2</a></p>
-					<p><a href="*">Title 3</a></p>
+					<p><a href="http://lymanwong.github.io/blog-posts/week5_cultural.html">Pairing and Giving Feedback</a></p>
+					<p><a href="http://lymanwong.github.io/blog-posts/week5_technical.html">Class is in session</a></p>
+					<p><a href="http://lymanwong.github.io/blog-posts/week4_cultural_blog.html">Work smarter, not harder</a></p>
 				<h6></h6>
 				<h3>Archives</h3>
-					<p><a href="*">This is the first month!</a></p>
-					<p><a href="https://www.youtube.com/watch?v=LDyXdAf3LR0" target="_blank">Use Stewie's time machine</a></p>
-					<p><a href="https://www.youtube.com/watch?v=v32VypWeF0I" target="_blank">Buck Rogers</a></p>
+					<p><a href="http://lymanwong.github.io/blog-posts/september_2014.html">September 2014</a></p>
+					<p><a href="http://lymanwong.github.io/blog-posts/august_2014.html">August 2014</a></p>
 		</div>
 		<div id="footer">Shoot me an email! <a href="mailto:lymanwong@gmail.com">pewpewpewpew</a></div>
 	</body>
