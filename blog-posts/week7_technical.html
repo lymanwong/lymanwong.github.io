@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The webdev padiwan</title>
+		<link type="text/css" rel="stylesheet" href="http://lymanwong.github.io/stylesheets/blog-stylesheet.css">
+	</head>
+	<body>
+		<div id="header">Lyman's rants<h5></h5><span style="font-size: 15px">Exploring the things that float around in my mind as a webdev Padawan</span>
+		</div>
+		<div class="left">
+			<h3 id="textareatitle">Ridin' in my SQL-aide - 09.18.2014</h3>
+				<p id="textarea"><b>What is SQL injection?</b></br>
+					SQL injection has nothing to do with Breaking Bad (sorry fans).  SQL injection is one of the most common forms of web attack methods used by hackers to steal our prescious data from organizations.  These hackers take advantage of improper coding used in web applications that allows then to inject SQL commands into your code, e.g. your login form, to gain access to the data within your databased.  Since many web applications allow people to submit and retrieve data to and from a database, it's a prime target for hackers to input SQL statements to pass through and retrieve the database directly.</br></br>
+					You can prevent your site from being hacked by SQL injection:</br>
+					1) <b>Prepared statements (parameterized queries)</b>: Prepared statements force the developer to first define all SQL code, and then pass each parameter to the query later.  This allows the database to distinquish between code and data, regardless of what user input has supplied.  Prepared statements ensures that an attacker is not able to change the intent of a query because, say an attacker entered the userID of joe' or '1'='1, the parameterized query would not be vulnerable and would look for a username which literally matched the entire string tom' or '1'='1.</br></br>
+					
+					2) <b>Stored procedures</b>: Stored procedues work similar to prepared statements and has the same effect.  It also requires the developer to define the SQL code first, and then pass the parameters later.  The difference between the two is that the SQL code for a stored procedure is defined and stored in the database itself, and then called from the application.</br></br>
+					
+					3) <b>Escaping all user supplied input</b>: Each database management system supports one or more character escaping schemes specific to certain kinds of queries. Character escaping? Say whaaaaa? When you call this function on the input string, it will add a backslash in front of every special character.  This will "muck up" the hacker's code so the database management system will not confuse that input with your SQL code.</br></br>
+					
+					4) <b>Least privilege</b>: Minimize the privileges assigned to every database account by not assigning database access or admin type access rights to your application accounts.  It's better to limit create or delete access to database accounts.  Instead, make sure that accounts that only need read access are only granted read access to tables they need access to.  If an account only needs access to portions of a table, consider creating a view that limits access to that portion of data and assigning the account access to view instead, rather than the underlying table.</br></br>
+
+					5) <b>White list input validation</b>: White list validation involves defining exactly what is authorized, and by definition, everything else is not authorized.
+				</p>
+				
+				<p id="textarea"><b>SQL databases versus NoSQL databases.?</b></br>
+					SQL databases are primarily called as Relational Databases (RDBMS); whereas NoSQL database are primarily called as non-relational or distributed database.  Depending on your application, situation, necessities, etc you may go with one or the other.  Below are some of the advantages and disadvantages of each:</br></br>
+
+					1) SQL databases are table based databases whereas NoSQL databases are document based, key-value pairs, graph databases or wide-column stores. This means that SQL databases represent data in form of tables which consists of some number of rows of data whereas NoSQL databases are the collection of key-value pair, documents, graph databases or wide-column stores which do not have standard schema definitions it needs to stick to.</br>
+					2) For complex queries: SQL databases are good fit for the complex query intensive environment whereas NoSQL databases are not good fit for complex queries. On a high-level, NoSQL don’t have standard interfaces to perform complex queries, and the queries themselves in NoSQL are not as powerful as SQL query language.</br>
+					3) For the type of data to be stored: SQL databases are not best fit for hierarchical data storage. But, NoSQL database fits better for the hierarchical data storage as it follows the key-value pair way of storing data similar to JSON data.  NoSQL database are highly preferred for large data set (i.e for big data).</br>
+					4) For scalability: In most typical situations, SQL databases are vertically scalable. You can manage increasing load by increasing the CPU, RAM, SSD, etc, on a single server. On the other hand, NoSQL databases are horizontally scalable. You can just add few more servers easily in your NoSQL database infrastructure to handle the large traffic.</br>
+					5) For high transactional based application: SQL databases are best fit for heavy duty transactional type applications, as it is more stable and promises the atomicity as well as integrity of the data. While you can use NoSQL for transactions purpose, it is still not comparable and sable enough in high load and for complex transactional applications.</p>
+				
+				<p id="textarea"><b>How can you optimize SQL queries?</b></br>
+					You can optimize your SQL queries by using some (or all) of the following:</br>
+					1) <b>Indexes</b>: Indexes allow the database application to find data quickly without reading the entire table.</br>
+					2) <b>Symbol Operator</b>: Symbol operators such as >,<,=,!=,etc. will help speed up queries by bypassing characters that does not fullfill the requirement.</br>
+					3) <b>Wildcard</b>: You can optimze your query by using the wildcard (%) as a prefix ('%hello') or postfix ('hello%') instead of the full wildcard ('%hello%') especially if you have a large database.</br>
+					4) <b>Not Operator</b>: Instead of using the NOT operator, it's quicker to use search terms such as LIKE, IN, EXIST or the != symbol.  If you use the negative operator, the query will search all the rows to determine what belongs (or not belong) to your query.</br>
+					5) <b>Count vs Exist</b>: If you are going to use COUNT to determine if a certain type of data is in your table, in this case, it would be better to use the EXIST operator since the query would stop once it's found.  The COUNT operator would go through the entire table.</br>
+					6) <b>Wildcard vs Substr</b>: If you have indexed a column and you want to search for a particular value, use the wildcard operator instead of substr.  Substr would look at every single row in order to find the value.  For example: SELECT * FROM TABLE WHERE  COLUMN = 'sirracha'  =try=> SELECT * FROM TABLE WHERE  COLUMN = 'sirr%'</br>
+					7) <b>Index Unique Column</b>: Depending on the database, it may be quicker if the column is unique and indexed, declare it as such.</br>
+					8) <b>Max and Min Operators</b>: If your column has been indexed, using Max or Min on said column would also be speed up.</br>
+					9) <b>Data Types</b>: Use the smallest data type as possible, such as using smaller integer types to get smaller tables.</br>
+					10) <b>Primary Index</b>: Try to make the primary column for indexing as short as possible.</br>
+					11) <b>Limit The Result</b>: Instead of return all values, limit the amount of returns to what is needed.
+				</p>
+
+				<p id="textarea"><b>My YouTube song of the day</b></p>
+				<p id="textarea"><iframe width="400" height="250" src="http://www.youtube.com/embed/MBvVocNTF34" frameborder="0" allowfullscreen></iframe></p>
+		</div>
+		<div class="right">
+			<a href="http://www.linkedin.com/in/lymanwong/" target="_blank"><img src="https://s3.amazonaws.com/photos.angel.co/users/526875-medium_jpg?1405665563"></a>
+				<h4><a href="http://lymanwong.github.io/index.html">HOME</a></h4>
+				<h6></h6>
+				<h3>Recent Posts</h3>
+					<p><a href="http://lymanwong.github.io/blog-posts/week6_cultural_blog.html">Stereotype Threat</a></p>
+					<p><a href="http://lymanwong.github.io/blog-posts/week6_technical.html">Classes versus Modules</a></p>
+					<p><a href="http://lymanwong.github.io/blog-posts/week5_cultural.html">Pairing and Giving Feedback</a></p>
+				<h6></h6>
+				<h3>Archives</h3>
+					<p><a href="http://lymanwong.github.io/blog-posts/september_2014.html">September 2014</a></p>
+					<p><a href="http://lymanwong.github.io/blog-posts/august_2014.html">August 2014</a></p>
+		</div>
+		<div id="footer">Shoot me an email! <a href="mailto:lymanwong@gmail.com">pewpewpewpew</a></div>
+	</body>
+</html>
