@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit 3 Cheat Sheet</title>
+    <link type"text/css" rel="stylesheet" href="http://johnw335.github.io/stylesheets/unit3_cheatsheet.css"/>
+  </head>
+<body>
+  <div id="ruby">
+    <h1><a href="#rubybody">Ruby</a></h1>
+    <ul class="top">
+      <li>Syntax</A></li>
+      <li>Hashes & Arrays</li>
+      <li>Iteration</li>
+      <li>Classes</li>
+      <li>Loops</li>
+    </ul>
+  </div>
+  <div id="java">
+    <h1><a href = "#javabody">Java</a></h1>
+    <ul class="top">
+      <li>Syntax</li>
+      <li>Objects</li>
+      <li>Functions - For and While loops</li>
+      <li>Arrays</li>
+    </ul>
+  </div>
+  <div id="css">
+    <h1><a href="#cssbody">HTML/CSS</a></h1>
+    <ul class="top">
+      <li>HTML/CSS skeleton</li>
+      <li>Basic and Advanced Formatting</li>
+      <li>CSS blocking</li>
+      <li>HTML 5 doctype additions</li>
+    </ul>
+  </div>
+  <h1 id="cheatsheet">CheatSheet</h1>
+  <div id="rubybody">
+    <h2>Ruby</h2>
+    <p class="bold">
+        Syntax
+    </p>
+    <p>
+        def method_name(if_arguments)</br>
+        &nbsp;&nbsp;&nbsp;Do something </br>
+        end</br>
+    </p>
+      <span class="bold">Commonly used methods</span>
+      <ol>
+        <li><span class="bold">.include</span></li>
+            <p>
+               arr = ['a', 'b', 'c'] </br>
+               arr.include?('a') #=> true </br>
+               arr.include?('y') #=> false </br>
+            </p>
+        <li><span class="bold">.gsub</span></li>
+          <p>
+            user_input = "hello there"</br>
+            if user_input.include? "there"</br>
+            &nbsp;user_input.gsub!("there", "you")</br>
+            end #=> "hello you"</br>
+          </p>
+        <li><span class="bold">.inject</span></li>
+          <p>
+            [1,2,3,4].inject(0){|result, element| result + element}</br>
+            1 + 2 + 3 + 4 #=> 10
+          </p>
+        <li><span class="bold">.flatten</span></li>
+            <p>
+                a = [1, 2, 3] </br>
+                b = [w, x, y] </br>
+                c = [a, b, 9, 10] #=> [[1, 2, 3], [w, x, y], 9, 10] </br>
+                c.flatten #=> [1, 2, 3, w, x, y, 9, 10]
+            </p>
+      </ol>
+    <p>
+        <span class="bold">Hashes and Arrays</span>
+    </p>
+      <ol>
+        <li><span class="bold">Hash</span></li>
+          <ul>
+            <li>How to create a new hash</li>
+              <ol>
+                <li>apple = Hash.new  #=> apple = {}</li>
+                <li>
+                drinks = Hash.new {|hash, key| hash[key] = "oranges: #{key}"} #=> {}</br>
+                drinks['screwdriver'] #=> "oranges: screwdriver"</br>
+                drinks #=> {"screwdriver"=>"oranges: screwdriver"}</br>
+                </li>
+                <li>
+                cars = {</br>
+                &nbsp;&nbsp;&nbsp;"Toyota" => "Camry",</br>
+                &nbsp;&nbsp;&nbsp;"Honda" => "Civic",</br>
+                &nbsp;&nbsp;&nbsp;"Ford" => "Taurus"</br>
+                }</br>
+                #=> {"Toyota":"Camry","Honda":"Civic", "Ford":"Taurus"}
+                </li>
+              </ol>
+            <li>How to assign a new value for an element of a hash</li>
+            <p>
+            cars = {</br>
+                &nbsp;&nbsp;&nbsp;"Toyota" => "Camry",</br>
+                &nbsp;&nbsp;&nbsp;"Honda" => "Civic",</br>
+                &nbsp;&nbsp;&nbsp;"Ford" => "Taurus"</br>
+                }</br>
+            cars["Toyota"] = "Corolla"</br>
+            #=> "Corolla"</br>
+            cars #=> {"Toyota"=>"Corolla", "Honda"=>"Civic", "Ford"=>"Taurus"}
+            </p>
+          </ul>
+        <li><span class="bold">Array</span></li>
+          <ul>
+            <li>How to create a new array</li>
+             <ol>
+                <li>Array.new(3) #=> [nil,nil,nil]</li>
+                <li>
+                Array.new(
+                </li>
+                <li>
+                cars = {</br>
+                &nbsp;&nbsp;&nbsp;"Toyota" => "Camry",</br>
+                &nbsp;&nbsp;&nbsp;"Honda" => "Civic",</br>
+                &nbsp;&nbsp;&nbsp;"Ford" => "Taurus"</br>
+                }</br>
+                #=> {"Toyota":"Camry","Honda":"Civic", "Ford":"Taurus"}
+                </li>
+              </ol>
+            <li>How to assign a new value for an element of an array</li>
+          </ul>
+      </ol>
+    <p>
+        <span class="bold">Iteration</span>
+    </p>
+       <ol>
+        <li><span class="bold">If</span></li>
+          <p>
+          def glass_color(color)</br>
+          &nbsp;&nbsp;&nbsp;if glass == "Red"</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;puts "The glass is red."</br>
+          &nbsp;&nbsp;&nbsp;elsif glass == "Green"</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;puts "The glass is green."</br>
+          &nbsp;&nbsp;&nbsp;else</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;puts "The glass is not red or green."</br>
+          &nbsp;&nbsp;&nbsp;end</br>
+          end</br>
+          glass_color("Blue") #=> "The glass is not red or green."</br></br>
+
+          def color(color)</br>
+          &nbsp;&nbsp;&nbsp;color == "Red"? "It's red": color == "Green"? "It's green":"It's not red or green."</br>
+          end
+          color("Black") #=> "It's not red or green."
+          </p>
+        <li><span class="bold">Loop do</span></li>
+        <p>
+        Don't forget the counter or else it will go on forever!</br>
+        <b>counter</b> = 0</br>
+        loop do</br>
+        &nbsp;&nbsp;&nbsp;print "woot "</br>
+        &nbsp;&nbsp;&nbsp;counter += 1</br>
+        &nbsp;&nbsp;&nbsp;break if counter = 5</br>
+        end #=> woot woot woot woot woot</br>
+        </p>
+        <li><span class="bold">For</span></li>
+          <p>
+          for number in 1..5</br>
+          &nbsp;&nbsp;&nbsp;puts number</br>
+          end</br>
+          <p>
+        <li><span class="bold">Each</span></li>
+        <p>
+        object.each{|item| #do something}</br>
+        numbers = [1,2,3,4,5]</br>
+        numbers.each{|num| puts num} #=> 1 2 3 4 5</br></br>
+
+        object.each do |item|</br>
+        &nbsp;&nbsp;&nbsp;do something</br>
+        end</br>
+        numbers = [1,2,3,4,5]</br>
+        numbers.each do |num|</br>
+        &nbsp;&nbsp;&nbsp;puts num</br>
+        end #=> 1 2 3 4 5
+        </p>
+        <li><span class="bold">Unless</span></li>
+        <p>
+        bored = false
+        until bored
+        &nbsp;&nbsp;&nbsp;puts "I'm writing Ruby programs!"
+        end  #=> I'm writing Ruby programs!"
+        </p>
+        <li><span class="bold">Times</span></li>
+        <p>
+        5.times{puts "beep"} #=> beep beep beep beep beep
+        </p>
+        <li><span class="bold">Until</span></li>
+        <p>
+        Don't forget about the counter</br>
+        counter = 3</br>
+        until counter == 0 do</br>
+        &nbsp;&nbsp;&nbsp;puts "boom"</br>
+        &nbsp;&nbsp;&nbsp;counter -= 1</br>
+        end #=> boomboomboom
+        </p>
+        <li><span class="bold">Case (When)</span></li>
+        <p>
+        puts "What language do you speak?"</br>
+        greeting = gets.chomp</br>
+
+        case greeting</br>
+        when "English" then puts "Hello!"</br>
+        when "French" then puts "Bonjour!"</br>
+        when ...</br>
+        else</br>
+        puts "I don't know that language."</br>
+        end</br></br>
+        </p>
+      </ol>
+    <p id="classes">
+        <span class="bold">Classes</span></br></br>
+        class Newclass</br>
+        &nbsp;&nbsp;&nbsp;def initialize (variables)</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@variables = variables</br>
+        &nbsp;&nbsp;&nbsp;end</br></br>
+        &nbsp;&nbsp;&nbsp;def method</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do something</br>
+        &nbsp;&nbsp;&nbsp;end</br>
+        end</br>
+        new.Newclass
+    </p>
+    <p id="rresources">
+    Helpful resources:
+      <ul>
+        <li><a href="http://www.rubyinside.com/21-ruby-tricks-902.html">21 Ruby tricks</a></li>
+        <li><a href="http://rubular.com/">Rubylar</a></li>
+        <li><a href="http://www.ruby-doc.org/">Ruby-doc</a></li>
+        <li><a href="http://en.wikibooks.org/wiki/Ruby_Programming/Syntax">Ruby Programming</a></li>
+        <li><a href="http://ruby.learncodethehardway.org/book/">Learn Ruby the Hard Way</a></li>
+      </ul>
+    </p>
+
+  </div>
+  <div id="javabody">
+    <h2>Java</h2>
+      <p>
+      Syntax</br></br>
+
+      //this is how you comment one line</br></br>
+
+      /*</br>
+      comment multiple lines</br>
+      */</br></br>
+
+      var functionName = function(paramenter){</br>
+      do something;</br>
+      }</br>
+      </p>
+      <p>
+      Objects
+      </p>
+      <p>
+      Functions - For and While loops
+      </p>
+      <p>
+      Arrays
+      </p>
+      <p>
+      Helpful resources:
+      <ul>
+        <li><a href="http://www.w3schools.com/js/default.asp">w3Schools</a></li>
+        <li><a href="http://eloquentjavascript.net/">Eloquent JavaScript</a></li>
+        <li><a href="http://www.jshint.com/">JSHint - Debugger</a></li>
+        <li><a href="*">Place holder</a></li>
+        <li><a href="*">Place holder</a></li>
+      </ul>
+      </p>
+  </div>
+
+  <div id="cssbody">
+    <h2>HTML</h2>
+      <p>
+      HTML/CSS skeleton<br>
+      <!-- Don't forget the < > for the tags--></br>
+      !DOCTYPE html</br>
+      &nbsp;&nbsp;&nbsp;html</br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;head</br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;link href="main.css" rel="stylesheet" href="location"/></br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/head</br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;body</br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1  /h1</br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p   /p</br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/body</br>
+      &nbsp;&nbsp;&nbsp;/html</br></br>
+
+      CSS</br>
+      selector{</br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;property:value;</br>
+      }</br></br>
+
+      Class selector:</br>
+      .header{</br>
+      &nbsp;&nbsp;&nbsp;property:value;</br>
+      }</br></br>
+
+      Combining classes and elements
+      .header p{</br>
+      color:blue;</br>
+      }</br></br>
+
+      </p>
+      <p>
+      Basic and Advanced Formatting
+      </p>
+      <p>
+      CSS blocking
+      </p>
+      <p>
+      HTML 5 doctype additions
+      </p>
+      <p>
+      Helpful resources:
+      <ul>
+        <li><a href="http://code.tutsplus.com/tutorials/30-html-best-practices-for-beginners--net-4957">30 HTML Best Practices</a></li>
+        <li><a href="http://skillcrush.com/wp-content/uploads/2012/06/HTML-Cheatsheet-Skillcrush.pdf">HTML Cheatsheet (how meta!)</a></li>
+        <li><a href="https://gsnedders.html5.org/outliner/">HTML Outliner - Debugger</a></li>
+        <li><a href="http://www.cssbasics.com/introduction-to-css/">CSS Basics</a></li>
+        <li><a href="http://code.tutsplus.com/tutorials/30-css-best-practices-for-beginners--net-6741">30 CSS Best Practices</a></li>
+      </ul>
+      </p>
+  </div>
+</body>
+</html>
