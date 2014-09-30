@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The webdev padiwan</title>
+	<link type="text/css" rel="stylesheet" href="/Users/Lyman/lymanwong.github.io/stylesheets/blog-stylesheet3.css">
+	<link rel="stylesheet" type="text/css" href="lymanwong.github.io/fonts/Comfortaa/Comfortaa-Regular.ttf">
+</head>
+<body>
+<div id="container">
+	<header>Lyman's rants<h5></h5><span style="font-size: 15px">Exploring the things that float around in my mind as a webdev Padawan</span>
+	</header>
+	
+	<div id="main">
+		<div id="sidebar1">
+			<div class="img-circular">
+
+			</div>
+		</div>
+		<div id="sidebar2">
+			<h4><a href="http://lymanwong.github.io/index.html">HOME</a></h4>
+			<h6></h6>
+			<h3>Recent Posts</h3>
+			<p><a href="http://lymanwong.github.io/blog-posts/week8_cultural.html">Spin the Compass of Shame</a></p>
+			<p><a href="http://lymanwong.github.io/blog-posts/week7_cultural.html">Valuable Values</a></p>
+			<p><a href="http://lymanwong.github.io/blog-posts/week7_technical.html">Ridin' in my SQL-aide</a></p>	
+			<h6></h6>
+			<h3>Archives</h3>
+			<p><a href="http://lymanwong.github.io/blog-posts/september_2014.html">September 2014</a></p>
+			<p><a href="http://lymanwong.github.io/blog-posts/august_2014.html">August 2014</a></p>
+		</div>
+		<div id="column1">
+			<h2 id="textareatitle">Express Yourself (in Ruby) - 09.29.2014
+			</h2>
+			<p id="textarea"><b>What a regular expression and a regular expression literal??</b></br>
+					A regular expression (regexp) are patters which describe the contents of a string.  They help you match/find other strings (or sets of strings) or give you parts that match your search terms.</br></br>
+					
+					A regular expression literal is a pattern between slashes (/../), between arbitrary delimiters followed by %r{..}, or by using Regexp::new.  For example:</br></br>
+					
+					Here 'nose' does not contain 'booger'(or does it?)</br>
+					/booger/.match('nose') #=> nil</br>
+					Did I trick you into looking at the mirror?!</br></br>
+					
+					Here 'toenail' contains 'toe',</br>
+					/toe/.match('toenail') #=> #MatchData "toe"</br>
+					so winner winner chicken dinner!
+			</p>
+			<p id="textarea">You're probably saying, "What if I want to know where it's at, bro?"</br>Well, you can use (=~).  =~ is used as a basic patter-matching tool.  The only catch is that you have to use a regular expression (left) and the other is a string to match against.  For example:</br></br>
+
+				Since I'm from Cali, let's use the word like...</br>
+				/like/ =~ 'hellahellahellahellalikeawesome'  #=> 15</br>
+				It will return where, like, like starts.</br></br>
+
+				On the flipside,...</br>
+				/wave/ =~ 'Giantsgame' #=> nil</br>
+				because we <b>don't</b> do the wave at Giants games!  I'm just doing my part to educate future Giants fans out there.  #publicserviceannouncement
+			</p>	
+			<p id="textarea">What happens if you got special characters (aka. Metacharacters) in my search terms?  Well, metacharacters are (,).[,],{,},.,?,+,*.  They have a</br></br>
+
+			<img src="http://s2.quickmeme.com/img/4a/4a3e4f9e2c8194f18e6a0ed55ba9b0ccee9469efdb0a6fa08e51a282c0e0e200.jpg"></br></br>
+
+				but if you want to find them, you'll have to include backslashes (\\). It's like a dog marking it's territory for other dogs.  You're marking the special characters for the computer to do somthing else.  For example:</br></br>
+
+				/1 \+2 = 3\?/.match('Does 1 + 2 = 3?') #=> #MatchData "1 + 2 = 3?"
+			</p>
+			<p id="textarea"><b>What if I got a few things I want to check for?</b></br>
+				You are full of questions, aren't you?!  Let me drop some knowledge:  In this case, you would use a character class.  You'll still use .match but you'll have to do something different in the syntax:</br></br>
+				
+				If you're on the final stage of Wheel of Fortune and the category is film.  You can select a bunch of letters like this:</br></br>
+
+				/S[aeiou]percalifragilisticexpialidocious/.match("Supercalifragilisticexpialidocious")</br>=> #MatchData "Supercalifragilisticexpialidocious"</br>
+				Marry Poppins, son!  /[aeiou]/ means a,e,i, or u instead of /aeiou/ which means a followed by e followed by i...</br></br>
+
+				If you are searching for a range of letters(or numbers), you'd use the (-) sign.  For example:</br></br>
+
+				/[0-99a-z]/.match('99problems') #=> #MatchData "9"</br></br>
+
+				If you are trying to exclude seomthing from a search, you can use the caret (^):</br></br>
+
+				/[^a-eg-z]/.match('f') #=> #MatchData "f"</br></br>
+
+				I'm outta time, but there's a whole lot more you can do.  Click <a href="http://ruby-doc.org/core-2.1.1/Regexp.html" target="_blank">here</a> to check it out.
+			</p>
+			<p id="textarea"><b>My YouTube song of the day</b></p>
+			<p id="textarea"><iframe width="400" height="250" src="http://www.youtube.com/embed/u31FO_4d9TY?feature=player_detailpage" frameborder="0"></iframe>
+			</p>
+		</div>
+	</div>
+	<footer>Shoot me an email! <a href="mailto:lymanwong@gmail.com">pewpewpewpew</a>
+	</footer>
+</div>
+</body>
+</html>
