@@ -33,7 +33,7 @@ a:hover {
 }
 #main {
     background-color: #BFBFCB;
-    min-height: 300px;
+    height: auto;
     font-size: 20px;
     overflow: hidden;
 }
@@ -41,13 +41,13 @@ a:hover {
 #sidebar1 {
     padding-left: 5%;
     background-color: #BFBFCB;
-    min-height: 1793px;
+    height: auto;
     float:left;
     width:140px;
 }
 #sidebar2 {
     background-color: #BFBFCB;
-    min-height: 1793px;
+    height: auto;
     float:right;
     width: 200px;
 }
