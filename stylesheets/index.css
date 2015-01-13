@@ -2,6 +2,7 @@ html, body {
 	background-color: #FFFFF6;
 	font-family: 'Comfortaa', serif;
 	height: 100%;
+
 }
 
 p.milk {
@@ -16,33 +17,33 @@ p.milk {
 
 #wrapper {
 	max-width: 800px;
-  	margin: 35px auto 0 auto;
-  	border: 1px solid #999999;
-  	padding: 60px;
-  	background: #fff;
-  	text-align: center;
+	margin: 35px auto 0 auto;
+	border: 1px solid #999999;
+	padding: 60px;
+	background: #fff;
+	text-align: center;
 }
 
 .wrapper {
 	max-width: 800px;
-  	margin: 35px auto 0 auto;
-  	border: 1px solid #999999;
-  	padding: 60px;
-  	background: #fff;
-  	text-align: center;
+	margin: 35px auto 0 auto;
+	border: 1px solid #999999;
+	padding: 60px;
+	background: #fff;
+	text-align: center;
 }
 
 .space {
 	max-width: 800px;
-  	margin: 45px auto 0 auto;
-  	border: 1px solid #FFFFF6;
-  	padding: 60px;
-  	background: #FFFFF6;
-  	text-align: right;
+	margin: 45px auto 0 auto;
+	border: 1px solid #FFFFF6;
+	padding: 60px;
+	background: #FFFFF6;
+	text-align: right;
 }
 
 img {
-	max-height: 2%;
+	max-height: 20px;
 	max-width: auto;
 }
 
@@ -66,9 +67,9 @@ span {
 }
 
 a:link {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 a:visited {
-    text-decoration: none;
+	text-decoration: none;
 }
