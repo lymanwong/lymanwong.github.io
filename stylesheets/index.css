@@ -43,12 +43,12 @@ p.milk {
 }
 
 img {
-	max-height: 2px;
+	max-height: 2%;
 	max-width: auto;
 }
 
 img.me {
-	max-height: 6px;
+	max-height: 6%;
 	max-width: auto;
 }
 
