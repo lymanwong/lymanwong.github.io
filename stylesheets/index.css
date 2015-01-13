@@ -43,7 +43,7 @@ p.milk {
 }
 
 img {
-	max-height: 2%;
+	max-height: 20px;
 	max-width: auto;
 }
 
@@ -52,24 +52,24 @@ img {
 	max-width: auto;
 	}*/
 
-#foots {
-	height: 330px;
-	position:relative;
-}
+	#foots {
+		height: 330px;
+		position:relative;
+	}
 
-.clearfoots {
-	height: 330px;
-	clear:both;
-}
+	.clearfoots {
+		height: 330px;
+		clear:both;
+	}
 
-span {
-	color:black;
-}
+	span {
+		color:black;
+	}
 
-a:link {
-	text-decoration: none;
-}
+	a:link {
+		text-decoration: none;
+	}
 
-a:visited {
-	text-decoration: none;
-}
+	a:visited {
+		text-decoration: none;
+	}
