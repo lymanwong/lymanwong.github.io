@@ -15,7 +15,8 @@ p.milk {
 	position: relative;
 }
 
-#wrapper {
+
+.wrapper {
 	max-width: 800px;
 	margin: 35px auto 0 auto;
 	border: 1px solid #999999;
@@ -24,7 +25,7 @@ p.milk {
 	text-align: center;
 }
 
-.wrapper {
+.wrapperbottom {
 	max-width: 800px;
 	margin: 35px auto 0 auto;
 	border: 1px solid #999999;
@@ -47,29 +48,24 @@ img {
 	max-width: auto;
 }
 
-/*img.me {
-	max-height: 6%;
-	max-width: auto;
-	}*/
+#foots {
+	height: 330px;
+	position:relative;
+}
 
-	#foots {
-		height: 330px;
-		position:relative;
-	}
+.clearfoots {
+	height: 330px;
+	clear:both;
+}
 
-	.clearfoots {
-		height: 330px;
-		clear:both;
-	}
+span {
+	color:black;
+}
 
-	span {
-		color:black;
-	}
+a:link {
+	text-decoration: none;
+}
 
-	a:link {
-		text-decoration: none;
-	}
-
-	a:visited {
-		text-decoration: none;
-	}
+a:visited {
+	text-decoration: none;
+}
