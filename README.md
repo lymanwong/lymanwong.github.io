@@ -10,4 +10,7 @@ Release 2: Completed<br>
 jQuery for bomb<br>
 
 Release 3:<br>
+Removed the Flickr hyperlink in the boom.<br>
+
+Future releases:<br>
 I plan to add some AJAX action in the future.
