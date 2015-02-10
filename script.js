@@ -3,10 +3,7 @@ $(document).ready(function() {
   // $('.boom').click(function() {
   //   $('.wrapperbottom').fadeIn('slow');
   // });
-$('.boom').mouseenter(function(){
+$('.boom').click(function(){
   $('.wrapperbottom').fadeIn('slow');
-});
-$('.boom').mouseleave(function(){
-  $('.wrapperbottom').fadeOut('slow');
 });
 });
