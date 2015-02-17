@@ -23,6 +23,8 @@ p.milk {
 	padding: 60px;
 	background: #fff;
 	text-align: center;
+	border: 2px solid;
+	border-radius: 25px;
 }
 
 .wrapperbottom {
