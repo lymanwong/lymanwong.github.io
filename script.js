@@ -7,6 +7,11 @@ $(document).ready(function() {
     $('.wrapperbottom').fadeIn('slow');
   });
 
+  $('.dbcpic').hide();
+  $('.dbc').click(function(){
+    $('.dbcpic').toggle('slow');
+  });
+
   $('.lilist').hide();
   $('.li').click(function(){
     $('.lilist').toggle('slow');
