@@ -73,3 +73,7 @@ a:link {
 a:visited {
 	text-decoration: none;
 }
+
+.li,li {
+	color: red;
+}
