@@ -17,6 +17,11 @@ $(document).ready(function() {
     $('.gitlist').toggle('slow');
   });
 
+  $('.bloglist').hide();
+  $('.blog').click(function(){
+    $('.bloglist').toggle('slow');
+  });
+
   $('.projectlist').hide();
   $('.projects').click(function(){
     $('.projectlist').toggle('slow');
