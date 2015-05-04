@@ -1,10 +1,7 @@
 $(document).ready(function() {
   $('.wrapperbottom').hide();
-  // $('.boom').click(function() {
-  //   $('.wrapperbottom').fadeIn('slow');
-  // });
   $('.boom').click(function(){
-    $('.wrapperbottom').fadeIn('slow');
+    $('.wrapperbottom').toggle('slow');
   });
 
   $('.dbcpic').hide();
