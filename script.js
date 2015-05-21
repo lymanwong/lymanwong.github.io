@@ -29,7 +29,7 @@ $(document).ready(function() {
   });
 
   $('.music').hide();
-  $('.git').click(function(){
+  $('.musiclist').click(function(){
     $('.music').toggle('slow');
   });
 
