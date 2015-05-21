@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 window.onload = function(){
   SC.initialize({
-    client_id: 'ef10d229673c01a84693af525e10e933'
+    client_id: '8252b473b6d9a433882f050f2fa37842'
   });
 
   var menuLinks = document.getElementsByClassName('genre');
