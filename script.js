@@ -28,9 +28,9 @@ $(document).ready(function() {
     $('.gitlist').toggle('slow');
   });
 
-  $('.music').hide();
-  $('.musiclist').click(function(){
-    $('.music').toggle('slow');
+  $('.musiclist').hide();
+  $('.music').click(function(){
+    $('.musiclist').toggle('slow');
   });
 
   $('.bloglist').hide();
