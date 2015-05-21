@@ -28,6 +28,11 @@ $(document).ready(function() {
     $('.gitlist').toggle('slow');
   });
 
+  $('.music').hide();
+  $('.git').click(function(){
+    $('.music').toggle('slow');
+  });
+
   $('.bloglist').hide();
   $('.blog').click(function(){
     $('.bloglist').toggle('slow');
