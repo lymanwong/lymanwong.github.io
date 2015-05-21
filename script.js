@@ -7,6 +7,21 @@ function playSomeSound(genre){
   });
 }
 
+window.onload = function(){
+  SC.initialize({
+    client_id: '8252b473b6d9a433882f050f2fa37842'
+  });
+
+  var menuLinks = document.getElementsByClassName('genre');
+  for(var i=0; i<menuLinks.length; i++) {
+    var menuLink = menuLinks[i];
+    menuLink.onclick = function(e) {
+      e.preventDefault();
+      playSomeSound(menuLink.innerHTML);
+    };
+  };
+};
+
 $(document).ready(function() {
   $('.wrapperbottom').hide();
   $('.boom').click(function(){
@@ -42,20 +57,6 @@ $(document).ready(function() {
   $('.projects').click(function(){
     $('.projectlist').toggle('slow');
   });
-
 });
 
-window.onload = function(){
-  SC.initialize({
-    client_id: '8252b473b6d9a433882f050f2fa37842'
-  });
 
-  var menuLinks = document.getElementsByClassName('genre');
-  for(var i=0; i<menuLinks.length; i++) {
-    var menuLink = menuLinks[i];
-    menuLink.onclick = function(e) {
-      e.preventDefault();
-      playSomeSound(menuLink.innerHTML);
-    };
-  };
-};
