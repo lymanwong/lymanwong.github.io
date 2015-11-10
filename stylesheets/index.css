@@ -62,9 +62,6 @@ img {
 	clear:both;
 }
 
-span {
-	color:black;
-}
 
 a:link {
 	text-decoration: none;
@@ -74,6 +71,26 @@ a:visited {
 	text-decoration: none;
 }
 
+a:hover {
+	color: #ccc;
+}
+
 .li,li {
 	color: red;
+}
+
+.gitlist {
+	margin-left: -35px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+span {
+	color:black;
+}
+
+.indents{
+	margin-left:-35px;
 }
