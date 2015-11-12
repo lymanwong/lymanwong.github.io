@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The webdev padiwan</title>
+		<link type="text/css" rel="stylesheet" href="http://lymanwong.github.io/stylesheets/blog-stylesheet.css">
+	</head>
+	<body>
+		<div id="header">Lyman's rants<h5></h5><span style="font-size: 15px">Exploring the things that float around in my mind as a webdev Padawan</span>
+		</div>
+		<div class="left">
+			<h3 id="textareatitle">Flexing my tech knowledge - 8.14.2014</h3>
+				<p id="textarea">What's the deal with Margin, Border, and Padding?<br>Well, the margin clears out the area around an "element" (an HTML element is everything from the start tag to the end tag) <b>outside the border</b>.  You won't be able to see the margin because it doesn't have a background color and it's transparent (think of it as a force field). You can define margins like this: p {margin-top: px; margin-bottom: px; margin-right: px; margin-left: px;}.<br>
+				<br>
+				A border, on the other hand, is a style property that allows you to set what kind of border to display.  In order to see the border, first you must decide how you want to display the border.  Would you like your border to be dotted, dashed, solid, double (lined), groove, ridge, inset, or outset.  You'd also have to define how wide the border is by using pixels.  Finally, you have to choose a color using a hexadecimal or hex (#), or RGB notation.  So you can define a border like this: p {border: ; border-width: ; border-style: ; border-color: ;}.<br>
+				<br>
+				Finally, padding clears the area around the content of an element <b>inside the border</b>.  The padding can be affected by the background color of the element.  Yopu can also define the top, right, bottom, and left property by using pixels.  This is how you can define padding: p {pading-top: px; padding-bottom: px; padding-right: px; padding-left: px;}
+				</p>
+				
+				<p id="textarea">What are the best practices associated with using classes versus ids?<br>
+				When you are trying to format a particular element, say body, you can only use one ID within it.  If you want to use only one style/format then you're good because IDs are unique.  This means that each element can only have one ID AND each page can have only one element with that ID.<br>
+				<br>
+				If you want to make the body element saucy and apply more than one style, then you're gonna need to use classes because they're not unique.  That means that you can use the same class on multiple elements AND you can use multiple classes on the SAME element.  If you have a class named "awesome", you can use it over and over again on your HTML page.<br>
+				<br>
+				One cool thing is that an element can have both an ID and a class.  For example, li id="awesome" class="sauce"
+				</p>
+				
+				<p id="textarea">What are the differences between relative, absolute, and fixed positioning?<br>
+				The relative positioning property value is based on the element's position relative to it's normal position.  Therefore, if you select "right: 20px", the setting will add 20 pixels to the element's RIGHT position.<br>
+				<br>
+				The absolute positioning property value will allow you to place any element where you want it.  You can use positioning options such as top, left, bottom, and right to set the location. The important thing to remember is that these positioning options are based relative to the next parent element's relative position on the page.  If there are no parent element's, the default setting will place the element at th etop of the page.  Another important thing to remember is that absolute positioning will remove the element from the flow of the other elements of the page and will not be affected by other elements.<br>
+				<br>
+				A fixed type of positioning is rarely used because the position of the element is relative to the viewport, or the browser window itself. It would work if the viewport stays the same, but people have different ways they can view your work, thus their experience will vary. You don't want to limit your audience to use one sized monitor to see your site properly, right?
+				</p>
+
+				<p id="textarea">What does it mean to display inline versus inline blocks?<br>
+				Displaying text inline is the default value for elements. An inline element will allow margin and padding, but the element will still sit inline. The margin and padding will only push the other neighboring elements horizontally away, not vertically.  An inline element will not even accept height and width; it will just ignore it.<br>
+				<br>
+				An inline-block is very similar to inline in that it will set inline with the natural flow of text. The big difference is that this setting will allow you to set width and height.<br></p>
+
+				<p id="textarea"><b>My YouTube song of the day</b></p>
+				<p id="textarea"><iframe width="400" height="250" src="http://www.youtube.com/embed/djV11Xbc914" frameborder="0" allowfullscreen></iframe></p>
+				<h5></h5>
+		</div>
+		<div class="right">
+			<a href="http://www.linkedin.com/in/lymanwong/" target="_blank"><img src="https://s3.amazonaws.com/photos.angel.co/users/526875-medium_jpg?1405665563"></a>
+				<h4><a href="http://lymanwong.github.io/index.html">HOME</a></h4>
+				<h6></h6>
+				<h3>Recent Posts</h3>
+					<p><a href="http://lymanwong.github.io/blog-posts/c1-chefs-kitchen.html">A rant about the Fireside Chat</a></p>
+					<p><a href="http://lymanwong.github.io/blog-posts/t1-compare-websites.html">A rant about a few sites</a></p>
+					<p><a href="*">Title 3</a></p>
+				<h6></h6>
+				<h3>Archives</h3>
+					<p><a href="*">This is the first month!</a></p>
+					<p><a href="https://www.youtube.com/watch?v=LDyXdAf3LR0" target="_blank">Use Stewie's time machine</a></p>
+					<p><a href="https://www.youtube.com/watch?v=v32VypWeF0I" target="_blank">Buck Rogers</a></p>
+		</div>
+		<div id="footer">Shoot me an email! <a href="mailto:lymanwong@gmail.com">pewpewpewpew</a></div>
+	</body>
+</html>
