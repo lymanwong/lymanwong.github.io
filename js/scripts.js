@@ -27,19 +27,12 @@
         $('.navbar-toggle:visible').click();
     });
 
-    $('#galleryModal').on('show.bs.modal', function (e) {
-       $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
+    $('#galleryModal').on('show.bs.modal', function (event) {
+       $('#galleryImage').attr("src",$(event.relatedTarget).data("src"));
     });
 
-    $('form').on('submit',function(event){
+    $('.emailme').click(function (event) {
         event.preventDefault();
-        $.ajax({
-            type: 'POST',
-            url: 'send_message.php',
-            data: $('form').serialize(),
-            success: function () {
-                alert('Success!');
-            }
-        });
+        window.open('mailto:lymanwong@gmail.com?subject=Hello from lymanwong.com');
     });
 })(jQuery);
