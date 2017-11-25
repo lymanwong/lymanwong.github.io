@@ -554,5 +554,7 @@ img::-moz-selection {
 
   .inner {
     padding-top: 15%; } }
+.xtraRecos {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
