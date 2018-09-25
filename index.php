@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="icon" type="image/png" href="http://lymanwong.com/images/favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
   </head>
   <body>
     <?php include_once("include/analyticstracking.php") ?>
