@@ -47,6 +47,12 @@
       $('.xtraRecos').slideToggle("slow");
     });
 
+    // var button = $("#seeMore");
+    // button.on("click", function() {
+    //   button.data("text-original", button.text());
+    //   button.text(button.data("text-swap"));
+    // });
+
     $('#pp').on('click', function(){
         $('#mylink').attr('href','http://pictureperfectbyivon.herokuapp.com/');
     })
