@@ -13,9 +13,9 @@
 
                     <p>From there, I moved into Community Management and collected a few more studio awards. I've also dipped my hand into game design by making several successful and highly profitable in-game features. It was an awesome experience to see positive feedback from the players. I then discovered that I wanted to make epic things that people are going to enjoy.</p>
 
-                    <p>After being laid off at Zynga, I started to learn how to code on my own and then enrolled into Dev Bootcamp in late 2014. I graduated January 2015 and began my career as a Front End developer at Phlint.</p>
+                    <p>After being laid off at Zynga, I started to learn how to code on my own and began my career as a Front End developer intern at Phlint on January 2015. It was my first time working on production code and I had a blast learning and growing.</p>
 
-                    <p>Although it was fun at Phlint, I decided to start a new adventure with the LeEco. Our team built and published the company Wordpress site where I remained as the webmaster for the India and US sites. I worked closely with Marketing to incorporate new features and content to the site keep it fresh and engaging. Then I moved onto our E-commerce platform team where I continue to introduce new and complelling features. I played an important part in the creation and launch of the US-Chinese site on LeEco.com.</p>
+                    <p>I then decided to start a new adventure with the LeEco. Our team built and published the company Wordpress site where I remained as the webmaster for both the India and US sites. I worked closely with Marketing to incorporate new features and content to the site keep it fresh and engaging. Then I moved onto our E-commerce platform team where I create new and complelling features. I played an important part in the creation and launch of the US-Chinese site on LeEco.com.</p>
                 </p>
                 <br/>
                 <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> Sweet! </button>
