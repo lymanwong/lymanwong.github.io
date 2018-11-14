@@ -54,7 +54,7 @@
     // });
 
     $('#pp').on('click', function(){
-        $('#mylink').attr('href','http://pictureperfectbyivon.herokuapp.com/');
+        $('#mylink').attr('href','http://udacity-4585057.hs-sites.com/');
     })
     $('#ny').on('click', function(){
         $('#mylink').attr('href','http://nytapi.herokuapp.com/');
