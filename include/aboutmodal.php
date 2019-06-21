@@ -4,10 +4,10 @@
             <div class="modal-body">
                 <h2 class="text-center">My Story:</h2>
                 <h5 class="text-center">
-                    <img class="profile" src="./images/profile.jpg" alt="This is a headshot of me.">
+                    <img class="profile" src="images/profile.JPG" alt="This is a headshot of me.">
                 </h5>
                 <p class="text-justify">
-                    I'm a native San Franciscan and have a passion for web development, gaming, sports and fitness. I’m a life-long learner who's looking to join a team where I can continue to learn, grow, and have some fun along the way.</p>
+                    I'm a native San Franciscan and have a passion for web development, community management, gaming, sports and fitness. I’m a life-long learner who's looking to join a team where I can continue to learn, grow, and have some fun along the way.</p>
 
                     <p>I started my tech career in Customer Support answering phones and emails while paying my way through college. During my time at Zynga, I've collected multiple studio awards and a department award in the Customer Support.</p>
 
