@@ -2,7 +2,7 @@
     "use strict";
 
     var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-      target: '#navbar-example'
+      target: '#navbar-fixed-top'
     })
 
 
