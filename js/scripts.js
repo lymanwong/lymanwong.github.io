@@ -1,10 +1,10 @@
 (function($) {
     "use strict";
 
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 60
-    });
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#navbar-example'
+    })
+
 
     $('#topNav').affix({
         offset: {
