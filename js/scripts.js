@@ -53,13 +53,13 @@
     //   button.text(button.data("text-swap"));
     // });
 
-    $('#inv').on('click', function(){
+    $('#finv').on('click', function(){
         $('#mylink').attr('href','https://fuelinventory.onrender.com/');
     })
-    $('#os').on('click', function(){
+    $('#ors').on('click', function(){
         $('#mylink').attr('href','https://fuelorderstatus.onrender.com/');
     })
-    $('#news').on('click', function(){
+    $('#hnews').on('click', function(){
         $('#mylink').attr('href','https://www.endlessos.org/os-direct-download');
     })
     $('#pp').on('click', function(){
