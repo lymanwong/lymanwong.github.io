@@ -53,6 +53,15 @@
     //   button.text(button.data("text-swap"));
     // });
 
+    $('#inv').on('click', function(){
+        $('#mylink').attr('href','https://fuelinventory.onrender.com/');
+    })
+    $('#os').on('click', function(){
+        $('#mylink').attr('href','https://fuelorderstatus.onrender.com/');
+    })
+    $('#news').on('click', function(){
+        $('#mylink').attr('href','https://www.endlessos.org/os-direct-download');
+    })
     $('#pp').on('click', function(){
         $('#mylink').attr('href','http://udacity-4585057.hs-sites.com/');
     })
