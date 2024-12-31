@@ -69,8 +69,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="images/nytimes.jpg" title="Click to see an example" id="ny">
-                <img src="images/laptop_med.jpg" class="img-responsive" alt="This is a picture of a laptop.">
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="http://lymanwong.com/images/nytimes.jpg" title="Click to see an example" id="ny">
+                <img src="./images/laptop_med.jpg" class="img-responsive" alt="This is a picture of a laptop.">
                 <div class="gallery-box-caption">
                     <div class="gallery-box-content">
                         <div>
@@ -82,8 +82,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="images/angular_example.jpg" title="Click to see an example" id="angular">
-                <img src="images/laptop_med.jpg" class="img-responsive" alt="This is a picture of a laptop.">
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="http://lymanwong.com/images/angular_example.jpg" title="Click to see an example" id="angular">
+                <img src="./images/laptop_med.jpg" class="img-responsive" alt="This is a picture of a laptop.">
                 <div class="gallery-box-caption">
                     <div class="gallery-box-content">
                         <div>
@@ -95,8 +95,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="images/pinteresting.jpg" title="Click to see an example" id="railspin">
-                <img src="images/laptop_med.jpg" class="img-responsive" alt="This is a picture of a laptop.">
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="http://lymanwong.com/images/pinteresting.jpg" title="Click to see an example" id="railspin">
+                <img src="./images/laptop_med.jpg" class="img-responsive" alt="This is a picture of a laptop.">
                     <div class="gallery-box-caption">
                         <div class="gallery-box-content">
                             <div>
@@ -108,8 +108,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="images/emailt.jpg" title="Click to see an example" id="emailt">
-                <img src="images/laptop_med.jpg" class="img-responsive" alt="This is a piture of a laptop.">
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="http://lymanwong.com/images/emailt.jpg" title="Click to see an example" id="emailt">
+                <img src="./images/laptop_med.jpg" class="img-responsive" alt="This is a piture of a laptop.">
                 <div class="gallery-box-caption">
                     <div class="gallery-box-content">
                         <div>
@@ -121,8 +121,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="images/paquito.png" title="Click to see an example" id="droid">
-                <img src="/images/laptop_med.jpg" class="img-responsive" alt="This is a picture of a laptop.">
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="http://lymanwong.com/images/paquito.png" title="Click to see an example" id="droid">
+                <img src="./images/laptop_med.jpg" class="img-responsive" alt="This is a picture of a laptop.">
                 <div class="gallery-box-caption">
                     <div class="gallery-box-content">
                         <div>

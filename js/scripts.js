@@ -63,16 +63,16 @@
         $('#mylink').attr('href','https://www.endlessos.org/os-direct-download');
     })
     $('#pp').on('click', function(){
-        $('#mylink').attr('href','http://udacity.com/');
+        $('#mylink').attr('href','http://udacity-4585057.hs-sites.com/');
     })
     $('#ny').on('click', function(){
         $('#mylink').attr('href','http://nytapi.herokuapp.com/');
     })
     $('#angular').on('click', function(){
-        $('#mylink').attr('href','https://github.com/lymanwong/lyman_angular_v2');
+        $('#mylink').attr('href','https://lyman-wong-angular.herokuapp.com/#/');
     })
     $('#railspin').on('click', function(){
-        $('#mylink').attr('href','https://github.com/lymanwong/pinteresting');
+        $('#mylink').attr('href','https://vrypinteresting.herokuapp.com/');
     })
     $('#emailt').on('click', function(){
         $('#mylink').attr('href','https://github.com/lymanwong/email-templates');

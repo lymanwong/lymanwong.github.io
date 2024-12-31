@@ -16,12 +16,10 @@ body {
 }
 
 body {
-    // font-family: $body-font;
-    // background-color: #282828;
-    // color: #d3d3d3;
-    // webkit-tap-highlight-color: #222;
-    background-color: #F3F4F6; /* Light Gray */
-    color: #111827; /* Dark Charcoal Gray */
+    font-family: $body-font;
+    background-color: #282828;
+    color: #d3d3d3;
+    webkit-tap-highlight-color: #222;
     font-family: 'Arial', sans-serif;
 }
 
@@ -38,26 +36,24 @@ hr.light {
 }
 
 a {
-    // color: $color-primary-text;
-    // -webkit-transition: all .35s;
-    // -moz-transition: all .35s;
-    // transition: all .35s;
-    color: #F97316; /* Warm Coral */
+    color: $color-primary-text;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover,
 a:focus {
-    // color: #656f8b;
+    color: #656f8b;
     outline: 0;
     text-decoration: none;
-    color: #93C5FD; /* Soft Sky Blue */
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'proximaNova','Questrial','Helvetica Neue',Arial,sans-serif;
-    color: #1E3A8A;
+    // color: black;
 }
 
 p {
@@ -704,31 +700,4 @@ img::-moz-selection {
 
 .xtraRecos {
     display:none;
-}
-
-/* Buttons */
-button {
-    background-color: #1E3A8A; /* Deep Navy Blue */
-    color: #FFFFFF; /* White */
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #93C5FD; /* Soft Sky Blue */
-}
-
-/* Footer */
-footer {
-    background-color: #1E3A8A; /* Deep Navy Blue */
-    color: #FFFFFF; /* White */
-    padding: 20px;
-    text-align: center;
-}
-
-footer a {
-    color: #93C5FD; /* Soft Sky Blue */
 }
