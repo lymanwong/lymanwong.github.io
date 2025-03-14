@@ -391,8 +391,9 @@ textarea {
   position: absolute;
   top: 50%;
   width: 100%;
-  text-align: center;
+  text-align: left;
   transform: translateY(-50%);
+  padding: 50px 25px;
 }
 
 .gallery-box:hover .gallery-box-caption {

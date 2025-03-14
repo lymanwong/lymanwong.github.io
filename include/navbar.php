@@ -29,7 +29,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" data-toggle="modal" title="Listen to music while you read" href="#sounds"><i class="icon-sm ion-music-note"></i></a>
+                        <a class="page-scroll" data-toggle="modal" title="case studies" >Case Studies</a>
                     </li>
                     <li>
                         <a class="page-scroll" data-toggle="modal" title="Click for a downloadable resume" href="#resume">Resume</a>
