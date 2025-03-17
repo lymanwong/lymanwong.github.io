@@ -2,12 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Lyman Wong | Web Developer and Community Guru</title>
-    <meta name="description" content="Lyman Wong, Web Developer" />
+    <title>Lyman Wong | Project and Product Manager</title>
+    <meta name="description" content="Lyman Wong, Project and Product Manager" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Codeply">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -29,7 +28,7 @@
 
     <?php include("include/education.php") ?>
 
-    <?php include("include/email.php") ?>
+    <!-- <?php include("include/email.php") ?> -->
 
     <?php include("include/footer.php") ?>
 
