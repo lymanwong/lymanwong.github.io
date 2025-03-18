@@ -31,7 +31,7 @@ hr.light {
 }
 
 a {
-  color: #e29578;
+  color: #264653;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -160,7 +160,7 @@ footer {
 
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #e29578 !important;
+  color: #264653 !important;
   background-color: transparent;
 }
 
@@ -396,10 +396,13 @@ textarea {
   text-align: left;
   transform: translateY(-50%);
   padding: 50px 25px;
+  font-size: calc(12px + 2vw);
+
 }
 
 .gallery-box:hover .gallery-box-caption {
   opacity: 1;
+
 }
 
 .gallery-box:hover img {
@@ -661,9 +664,25 @@ img::-moz-selection {
   .inner {
     padding-top: 15%;
   }
+  .h1, h1 {
+    font-size: 2.3em;
+  }
+  .gallery-text > h4 {
+  font-size: 12px;
+  }
+  .gallery-text > h3 {
+  font-size: 20px;
+  }
+  #four > div > div.call-to-action > h2,  #four > div > div.row > div > div:nth-child(1) > h3, #four > div > div.row > div > div:nth-child(3) > h3{
+  font-size: 20px;
+  }
 }
 .xtraRecos {
   display: none;
 }
+header .header-content {
+  padding: 50px 15px;
+}
+
 
 /*# sourceMappingURL=style.css.map */

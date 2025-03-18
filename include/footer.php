@@ -39,7 +39,6 @@
                 <ul class="list-inline">
                 <li><a rel="nofollow" href="https://www.github.com/lymanwong" title="Linkedin" target="_blank"><i class="icon-lg ion-social-github-outline"></i></a>&nbsp;</li>
                   <li><a rel="nofollow" href="https://www.linkedin.com/in/lymanwong" title="Linkedin" target="_blank"><i class="icon-lg ion-social-linkedin-outline"></i></a>&nbsp;</li>
-                  <li><a rel="nofollow" href="https://twitter.com/lyman_g_wong" title="Twitter"  target="_blank"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;</li>
                 </ul>
             </div>
         </div>
