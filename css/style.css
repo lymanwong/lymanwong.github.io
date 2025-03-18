@@ -566,11 +566,11 @@ img::-moz-selection {
 }
 
 /*  UPDATED! flip the pane when hovered */
-.flip-container:hover .back {
+.flip-container:active .back {
   transform: rotateY(0deg);
 }
 
-.flip-container:hover .front {
+.flip-container:active .front {
   transform: rotateY(180deg);
 }
 
