@@ -1,25 +1,40 @@
 <?php
 
-//Email send to
-$to = "lymanwong@gmail.com";
-//Contact Subject
-$subject = "$subject";
+$feedback = ""; // Initialize the variable
 
-$message = "$message";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Define recipient email
+    $to = "lymanwong@gmail.com";
 
-$name = $_POST['name'];
-$email = $_POST['sender_email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+    // Get form fields with validation
+    $name = isset($_POST['name']) ? trim($_POST['name']) : "";
+    $email = isset($_POST['sender_email']) ? trim($_POST['sender_email']) : "";
+    $subject = isset($_POST['subject']) ? trim($_POST['subject']) : "";
+    $message = isset($_POST['message']) ? trim($_POST['message']) : "";
 
-$header = "$email";
+    // Check if required fields are empty
+    if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+        echo "Error: All fields are required.";
+        exit;
+    }
 
-if($_POST){
-  mail($to, $subject, $message, $header);
-  $feedback = "Thanks for your email!";
+    // Validate email format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Error: Invalid email format.";
+        exit;
+    }
+
+    // Set email headers
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+    // Send email
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Thanks for your email!";
+    } else {
+        echo "Error: Unable to send email.";
+    }
 }
-//Check, if message sent to your email
-//display message "We've received your email"
-
 
 ?>
