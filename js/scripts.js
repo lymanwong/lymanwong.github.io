@@ -201,3 +201,4 @@
    },
    "retina_detect": true
  });
+console.log("Formspree ID from config.js:", FORM_ID);
