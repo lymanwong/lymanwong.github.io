@@ -201,4 +201,6 @@
    },
    "retina_detect": true
  });
+const form = document.getElementById('contactform');
+form.setAttribute('action', `https://formspree.io/f/${FORM_ID}`);
 console.log("Formspree ID from config.js:", FORM_ID);
