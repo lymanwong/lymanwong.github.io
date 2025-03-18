@@ -11,24 +11,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 text-center">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover')";>
-                        <div class="flipper">
+                    <div class="flip-container">
+                        <div class="flipper" onclick="this.classList.toggle('flipped')">
                             <div class="feature front">
                                 <!-- <i class="icon-lg ion-android-person wow fadeIn" data-wow-delay=".3s"></i> -->
-                                <a href="#galleryModal" class="gallery-box-alt" target="_blank" data-toggle="modal" data-src="http://lymanwong.com/images/amanda.jpeg"><img class="profile"src="images/amanda.jpeg" alt="This is a picture of Amanda."></a>
+                                <a href="gallery-box-alt" data-toggle="modal" data-src="http://lymanwong.com/images/amanda.jpeg"><img class="profile"src="images/amanda.jpeg" alt="This is a picture of Amanda."></a>
                                 <h3>Amanda M.</h3>
                                 <h4>Research & Programs @ Trust & Safety Foundation</h4>
-                                <h4><a href="https://www.linkedin.com/in/lymanwong" target="_blank">(Click and hold to view Amanda's recommendation)</a></h4>
+                                <h4>(Click view Amanda's recommendation)</h4>
                             </div>
                             <div class="back">
-                                <p class="text-muted">"It's a delight to work with Lyman! He's thoughtful, proactive, communicative, and well organized. He responded to a call for volunteers and, not only did he complete the tasks we had scoped, he went above and beyond, suggesting and then executing additional improvements. Lyman has both technical skills and people skills, but he also has drive...Lyman would be an asset to any team." <a href="https://www.linkedin.com/in/lymanwong" target="_blank">(more)</a></p>
+                                <p class="text-muted">"It's a delight to work with Lyman! He's thoughtful, proactive, communicative, and well organized. He responded to a call for volunteers and, not only did he complete the tasks we had scoped, he went above and beyond, suggesting and then executing additional improvements. Lyman has both technical skills and people skills, but he also has drive...Lyman would be an asset to any team."</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
+                    <div class="flip-container">
+                        <div class="flipper" onclick="this.classList.toggle('flipped')">
                             <div class="feature front">
                                 <!-- <i class="icon-lg ion-android-person wow fadeInUp" data-wow-delay=".2s"></i> -->
                                 <a class="gallery-box-alt" data-toggle="modal" data-src="http://lymanwong.com/images/max.jpeg"><img class="profile" src="images/max.jpeg" alt="This is a picture of Max"></a>
@@ -43,8 +43,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper">
+                    <div class="flip-container">
+                        <div class="flipper" onclick="this.classList.toggle('flipped')">
                             <div class="feature front">
                                 <!-- <i class="icon-lg ion-android-person wow fadeIn" data-wow-delay=".3s"></i> -->
                                 <a class="gallery-box-alt" data-toggle="modal" data-src="http://lymanwong.com/images/joe.jpeg"><img class="profile"src="images/joe.jpeg" alt="This is a picture of Joe."></a>
@@ -61,11 +61,11 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4 text-center">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover')";>
+                    <div class="flip-container" ontouchstart="this.classList.toggle('flipped')";>
                         <div class="flipper">
                             <div class="feature front">
                                 <!-- <i class="icon-lg ion-android-person wow fadeIn" data-wow-delay=".3s"></i> -->
-                                <a href="#galleryModal" class="gallery-box-alt" target="_blank" data-toggle="modal" data-src="http://lymanwong.com/images/neil.jpg"><img class="profile"src="images/neil.jpg" alt="This is a picture of Neil."></a>
+                                <a href="#galleryModal" data-toggle="modal" data-src="http://lymanwong.com/images/neil.jpg"><img class="profile"src="images/neil.jpg" alt="This is a picture of Neil."></a>
                                 <h3>Neil F.</h3>
                                 <h4>Sr. Director @ LeEco US</h4>
                                 <h4><a href="https://www.linkedin.com/in/lymanwong" target="_blank">(Click and hold to view Neil's recommendation)</a></h4>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('flipped');">
                         <div class="flipper">
                             <div class="feature front">
                                 <!-- <i class="icon-lg ion-android-person wow fadeInUp" data-wow-delay=".2s"></i> -->
@@ -93,7 +93,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('flipped');">
                         <div class="flipper">
                             <div class="feature front">
                         <!-- <i class="icon-lg ion-android-person wow fadeIn" data-wow-delay=".3s"></i> -->
@@ -121,7 +121,7 @@
 
             <div class="row xtraRecos">
                 <div class="col-lg-4 col-md-4 text-center">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('flipped');">
                         <div class="flipper">
                             <div class="feature front">
                                 <!-- <i class="icon-lg ion-android-person wow fadeIn" data-wow-delay=".3s"></i> -->
@@ -137,7 +137,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('flipped');">
                         <div class="flipper">
                             <div class="feature front">
                                 <!-- <i class="icon-lg ion-android-person wow fadeInUp" data-wow-delay=".2s"></i> -->
@@ -153,7 +153,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('flipped');">
                         <div class="flipper">
                             <div class="feature front">
                                 <!-- <i class="icon-lg ion-android-person wow fadeIn" data-wow-delay=".3s"></i> -->
@@ -170,7 +170,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-4 text-center">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('flipped');">
                         <div class="flipper">
                             <div class="feature front">
                                 <!-- <i class="icon-lg ion-android-person wow fadeIn" data-wow-delay=".3s"></i> -->
@@ -186,7 +186,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('flipped');">
                         <div class="flipper">
                             <div class="feature front">
                                 <!-- <i class="icon-lg ion-android-person wow fadeInUp" data-wow-delay=".2s"></i> -->
@@ -202,7 +202,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('flipped');">
                         <div class="flipper">
                             <div class="feature front">
                                 <!-- <i class="icon-lg ion-android-person wow fadeIn" data-wow-delay=".3s"></i> -->

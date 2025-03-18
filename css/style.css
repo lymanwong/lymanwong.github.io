@@ -566,13 +566,13 @@ img::-moz-selection {
 }
 
 /*  UPDATED! flip the pane when hovered */
-.flip-container:active .back {
+/* .flip-container:active .back {
   transform: rotateY(0deg);
 }
 
 .flip-container:active .front {
   transform: rotateY(180deg);
-}
+} */
 
 .flip-container, .front, .back {
   width: 320px;
@@ -581,9 +581,17 @@ img::-moz-selection {
 
 /* flip speed goes here */
 .flipper {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-  position: relative;
+-webkit-transition:0.6s;
+   -moz-transition:0.6s;
+     -o-transition:0.6s;
+        transition:0.6s;
+/*transform-style*/
+-webkit-transform-style:preserve-3d;
+   -moz-transform-style:preserve-3d;
+    -ms-transform-style:preserve-3d;
+     -o-transform-style:preserve-3d;
+        transform-style:preserve-3d;
+position:relative;
 }
 
 /* hide back of pane during swap */
@@ -616,6 +624,14 @@ img::-moz-selection {
 
 #four {
   background-color: #006d77;
+}
+
+.flipped {
+  -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+  -ms-transform:rotateY(180deg);
+  -o-transform:rotateY(180deg);
+  transform:rotateY(180deg);
 }
 
 @media (min-width: 992px) {
