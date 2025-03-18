@@ -1,13 +1,13 @@
-    <!-- Recommendations -->
-    <section class="bg-primary" id="one">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="margin-top-0 text-primary">Recommendations</h2>
-                    <hr class="primary">
-                </div>
+<!-- Recommendations -->
+<section class="bg-primary" id="one">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="margin-top-0 text-primary">Recommendations</h2>
+                <hr class="primary">
             </div>
         </div>
+    </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 text-center">
