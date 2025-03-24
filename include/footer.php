@@ -4,6 +4,7 @@
             <div class="col-xs-6 col-sm-3 column">
                 <h4>Information</h4>
                 <ul class="list-unstyled">
+                    <li><a class="page-scroll" href="#first">Top</a></li>
                     <li><a class="page-scroll" href="#one">Recommendations</a></li>
                     <li><a class="page-scroll" href="#two">Projects</a></li>
                     <li><a class="page-scroll" href="#three">Experience</a></li>
