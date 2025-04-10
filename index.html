@@ -52,7 +52,7 @@
                     </li>
 
                     <li>
-                        <a class="" href="mailto:lymanwong@gmail.com?subject=Email from https://lymanwong.github.io/" target="_blank">Contact</a>
+                        <a class="page-scroll" href="#last">Contact</a>
                     </li>
 
                 </ul>
@@ -880,28 +880,5 @@
     <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script>
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        let form = event.target;
-        let formData = new FormData(form);
-
-        fetch(`https://formspree.io/f/${FORM_ID}`, {
-            method: "POST",
-            body: formData,
-            headers: { "Accept": "application/json" }
-        }).then(response => {
-            if (response.ok) {
-                document.getElementById("feedback").innerHTML = "✅ Message sent successfully!";
-                form.reset();
-            } else {
-                document.getElementById("feedback").innerHTML = "❌ Error sending message. Please try again.";
-            }
-        }).catch(error => {
-            document.getElementById("feedback").innerHTML = "❌ Network error. Check your connection.";
-        });
-    });
-    </script>
   </body>
 </html>
