@@ -28,7 +28,7 @@
 
     <?php include("include/education.php") ?>
 
-    <?php /* include("include/email.php") */?>
+    <?php  include("include/email.php") ?>
 
     <?php include("include/footer.php") ?>
 
