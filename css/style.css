@@ -106,7 +106,7 @@ aside {
 
 footer {
   padding: 15px;
-  background-color: #2a9d8f;
+  background-color: #006d77;
 }
 
 .examples-styling {
@@ -620,6 +620,7 @@ position:relative;
             border: 1px solid #ccc;
             border-radius: 5px;
             color: black;
+            font-weight: normal;
         }
         button {
             background-color: #264653;
