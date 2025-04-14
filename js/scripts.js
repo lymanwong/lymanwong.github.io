@@ -44,28 +44,6 @@
         }
     }
 
-    // Load the FORM_ID from config.js
-    const script = document.createElement('script');
-    script.src = 'js/config.js';
-
-    script.onload = function() {
-        // Use the FORM_ID from the loaded script
-        if (typeof FORM_ID !== 'undefined') {
-            const form = document.getElementById('contactform');
-            setFormAction(form, FORM_ID); // Use the helper function
-        } else {
-            console.error("FORM_ID not found in config.js!");
-            // Consider disabling the form or showing an error message to the user.
-            $("#contactform").html("<p class='text-danger'>Form submission is currently unavailable. Please try again later.</p>");
-        }
-    };
-
-    script.onerror = function() {
-        console.error("Error loading config.js!");
-        // Consider disabling the form or showing an error message to the user.
-        $("#contactform").html("<p class='text-danger'>Form submission is currently unavailable. Please try again later.</p>");
-    };
-
     document.head.appendChild(script);
 
     $('#seeMore').on('click', function() {
