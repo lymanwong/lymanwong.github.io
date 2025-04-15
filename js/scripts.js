@@ -44,7 +44,7 @@
         }
     }
 
-    document.head.appendChild(script);
+    // document.head.appendChild(script);
 
     $('#seeMore').on('click', function() {
         $('.xtraRecos').slideToggle("slow");
