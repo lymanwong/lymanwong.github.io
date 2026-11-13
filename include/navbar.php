@@ -31,9 +31,9 @@
                     <li>
                         <a class="page-scroll" data-toggle="modal" title="case studies" >Case Studies</a>
                     </li>
-                    <li>
+<!--                     <li>
                         <a class="page-scroll" data-toggle="modal" title="Click for a downloadable resume" href="#resume">Resume</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a class="page-scroll" data-toggle="modal" title="More info about me" href="#aboutModal">About</a>
                     </li>
